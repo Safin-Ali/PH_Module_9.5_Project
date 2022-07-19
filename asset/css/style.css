@@ -85,6 +85,15 @@ img{
 .fw-regular{
     font-weight: 400;
 }
+.fw-bold{
+    font-weight: bold;
+}
+.fw-semibold{
+    font-weight: 600;
+}
+.text-align-center{
+    text-align: center;
+}
 
 /* ---------------------------
         Vriable Value
@@ -175,4 +184,10 @@ img{
 }
 .fa-star,.fa-star-half-stroke.filed-star.filed-star{
     color: #FB8200;
+}
+.product-layout+p{
+    text-align: right;
+}
+.product-layout+p>a{
+    color: #E02C6D;
 }
