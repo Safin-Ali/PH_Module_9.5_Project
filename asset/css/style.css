@@ -1,0 +1,127 @@
+/* ---------------------------
+        Font Import
+---------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* ---------------------------
+        Default Code
+---------------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* ---------------------------
+        Common Class
+---------------------------- */
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.black1-link{
+    color: #3a3a3a;
+    transition: color .3s;
+}
+.common-anchor{
+    display: inline-block;
+    color: #fff;
+    padding: 1% 2%;
+    background: #E02C6D;
+    font-weight: bold;
+}
+.fontSize52{
+    font-size: var(--52px);
+}
+.marginY20{
+    margin: var(--20px) auto;
+}
+.marginX50{
+    margin: 0 var(--50px);
+}
+.marginY50{
+    margin: var(--50px) auto;
+}
+
+/* ---------------------------
+        Vriable Value
+---------------------------- */
+
+:root{
+    --52px: 3.25em;
+    --20px: 1.25em;
+    --50px: 3.125em;
+    --lowlightgrey: #DDE4EB;
+}
+
+/* ---------------------------
+        Hover Style
+---------------------------- */
+
+.navbar-list-link a:hover.black1-link{
+    color: #7c7c7c;
+}
+
+/* ---------------------------
+        Navbar Style
+---------------------------- */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto auto;
+}
+.navbar p{
+    font-weight: 560;
+}
+.navbar-list-link a{
+    margin: 0 5px;
+    font-weight: 600;
+}
+
+/* ---------------------------
+        Header Content
+---------------------------- */
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto auto;
+    align-items: center;
+}
+.header-text p{
+    font-weight: 600;
+}
+.header-content .common-anchor{
+    border-radius: 100px;
+}
+
+/* ---------------------------
+      Online Brand Market
+---------------------------- */
+
+.online-brand-market{
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid var(--lowlightgrey);
+    border-bottom: 1px solid var(--lowlightgrey);
+}
+.online-brand-market img{
+    max-width: 60px;
+}
