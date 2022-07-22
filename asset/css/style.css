@@ -25,7 +25,7 @@ body {
     background: #ffffff50;
 }
 
-img{
+img {
     width: 100%;
     height: auto;
 }
@@ -34,64 +34,86 @@ img{
         Common Class
 ---------------------------- */
 
-.container{
+.container {
     width: 90%;
     margin: 0 auto;
 }
-.black1-link{
+
+.black1-link {
     color: #3a3a3a;
     transition: color .3s;
 }
-.common-anchor{
+
+.common-anchor {
     display: inline-block;
     color: #fff;
     padding: 1% 2%;
     background: #E02C6D;
     font-weight: bold;
 }
-.fontSize52{
+
+.common-anchor:hover {
+    background: #f74d8b;
+    transition: background .2s ease-in-out;
+}
+
+.fontSize52 {
     font-size: var(--52px);
 }
-.fontSize28{
+
+.fontSize28 {
     font-size: var(--28px);
 }
-.marginX20{
+
+.marginX20 {
     margin: auto var(--20px);
 }
-.marginY20{
+
+.marginY20 {
     margin: var(--20px) auto;
 }
-.marginX30{
+
+.marginX30 {
     margin: auto var(--30px);
 }
-.marginY30{
+
+.marginY30 {
     margin: var(--30px) auto;
 }
-.marginX50{
+
+.marginX50 {
     margin: 0 var(--50px);
 }
-.marginY50{
+
+.marginY50 {
     margin: var(--50px) auto;
 }
-.F-familyRoboto{
+
+.F-familyRoboto {
     font-family: 'Roboto', sans-serif;
 }
-.F-familyInter{
+
+.F-familyInter {
     font-family: 'Inter', sans-serif;
 }
-.fw-medium{
+
+.fw-medium {
     font-weight: 500;
 }
-.fw-regular{
+
+.fw-regular {
     font-weight: 400;
 }
-.fw-bold{
+
+.fw-bold {
     font-weight: bold;
 }
-.fw-semibold{
+
+.fw-semibold {
     font-weight: 600;
 }
-.text-align-center{
+
+.text-align-center {
     text-align: center;
 }
 
@@ -99,7 +121,7 @@ img{
         Vriable Value
 ---------------------------- */
 
-:root{
+:root {
     --52px: 3.25em;
     --20px: 1.25em;
     --30px: 1.875em;
@@ -112,7 +134,7 @@ img{
         Hover Style
 ---------------------------- */
 
-.navbar-list-link a:hover.black1-link{
+.navbar-list-link a:hover.black1-link {
     color: #7c7c7c;
 }
 
@@ -120,15 +142,17 @@ img{
         Navbar Style
 ---------------------------- */
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     margin: 50px auto auto;
 }
-.navbar p{
+
+.navbar p {
     font-weight: 560;
 }
-.navbar-list-link a{
+
+.navbar-list-link a {
     margin: 0 5px;
     font-weight: 600;
 }
@@ -137,16 +161,18 @@ img{
         Header Content
 ---------------------------- */
 
-.header-content{
+.header-content {
     display: flex;
     justify-content: space-between;
     margin: 50px auto auto;
     align-items: center;
 }
-.header-text p{
+
+.header-text p {
     font-weight: 600;
 }
-.header-content .common-anchor{
+
+.header-content .common-anchor {
     border-radius: 100px;
 }
 
@@ -154,13 +180,14 @@ img{
       Online Brand Market
 ---------------------------- */
 
-.online-brand-market{
+.online-brand-market {
     text-align: center;
     padding: 25px;
     border-top: 1px solid var(--lowlightgrey);
     border-bottom: 1px solid var(--lowlightgrey);
 }
-.online-brand-market img{
+
+.online-brand-market img {
     max-width: 60px;
 }
 
@@ -168,26 +195,113 @@ img{
   Products Collection Layout
 ---------------------------- */
 
-.product-layout{
+.product-layout {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
-.product-box{
+
+.product-box {
     background: #fff;
     box-shadow: 0px 0px 15px -10px;
     padding: 20px;
 }
-.product-box h5{
+
+.product-box h5 {
     color: #6d6d94;
     font-weight: bold;
 }
-.fa-star,.fa-star-half-stroke.filed-star.filed-star{
+
+.fa-star,
+.fa-star-half-stroke.filed-star.filed-star {
     color: #FB8200;
 }
-.product-layout+p{
+
+.product-layout+p {
     text-align: right;
 }
-.product-layout+p>a{
+
+.product-layout+p>a {
     color: #E02C6D;
+}
+
+/* ---------------------------
+        Feature Area
+---------------------------- */
+
+.features {
+    display: flex;
+    gap: 6.25rem;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.features-text {
+    width: 50%;
+}
+
+.features-text h1 {
+    font-size: 2.375rem;
+}
+
+.features-text p {
+    color: #6c6c6c;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+/* ---------------------------
+        Footer Area
+---------------------------- */
+
+footer {
+    background: #0A0826;
+    color: #D9DBE1;
+    text-align: center;
+    padding: 3%;
+    margin: 7% auto 0;
+}
+
+footer a {
+    display: inline-block;
+    color: var(--lowlightgrey);
+    font-size: 1.25rem;
+    background: #ffffff10;
+    border-radius: 50%;
+    padding: .1875rem .5rem;
+    margin: 1% 0.5%;
+}
+
+footer p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+}
+
+.fa-instagram:hover {
+    background: linear-gradient(45deg,
+            #f09433 0%,
+            #e6683c 25%,
+            #dc2743 50%,
+            #cc2366 75%,
+            #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.fa-dribbble:hover {
+    background: #E74D89;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+    transition: all .3s ease-in-out;
+}
+
+.fa-youtube:hover {
+    color: #ee1717;
+    transition: all .3s ease-in-out;
 }
